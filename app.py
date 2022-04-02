@@ -151,7 +151,7 @@ def create_new_user():
     app.logger.info('Created new user succesfully with username %s and password %s and no admin rights', username, password)
     return redirect('/index')
 
-@app.route("/logout", methods=["POST"])
+@app.route("/logout", methods=["GET","POST"])
 def logout():
     del session["username"]
     del session["id"]
