@@ -18,7 +18,7 @@ app = Flask(__name__)
 # A6:2017-Security Misconfiguration and/or A9:2017-Using Components with Known Vulnerabilities.
 AutoIndex(app, browse_root=os.path.curdir)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = getenv("DATABASE_URL")
+app.config["SQLALCHEMY_DATABASE_URI"] = getenv("DATABASE_PROD")
 db = SQLAlchemy(app)
 app.secret_key = getenv("SECRET_KEY")
 
