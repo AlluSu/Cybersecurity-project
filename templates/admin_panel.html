@@ -1,0 +1,22 @@
+<p>With great power comes great responsibility.. <br>
+welcome to the admin panel!
+</p>
+
+<p>Do you want to remove all users and data from the system? <br>
+<form action="/admin_view" method="POST" onsubmit="return notify(this)">
+    <input type="submit" value="Yes I understand what this button does">
+</form>
+</p>
+
+<p>
+<form action="/logout" method="POST">
+    <input type="submit" value="Logout">
+</form>
+</p>
+
+<script>
+    function notify(form) {
+        alert("Removing all data is not implemented yet, because we suspect that this application is not as safe as we thought..")
+        return true
+    }
+</script>

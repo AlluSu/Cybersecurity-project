@@ -1,0 +1,5 @@
+.env
+__pycache__
+venv
+OWASP_TOP_10:
+logs.log

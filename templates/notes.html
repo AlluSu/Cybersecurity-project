@@ -1,0 +1,16 @@
+{% if session.username %}
+<p>You are logged in as : {{ session.username}}</p>
+<a href="/logout">logout</a>
+
+<p>Your notes:</p>
+<ul>
+{% for note in notes %}
+<li>{{note}}</li>
+{% endfor %}
+</ul>
+
+<a href="/add_note">Create a new note</a>
+<br>
+<a href="/echo">Funny form</a>
+
+{% endif %}
