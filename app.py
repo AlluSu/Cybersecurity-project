@@ -73,7 +73,7 @@ def login():
 
         # Logs sensitive information! A3:2017-Sensitive Data Exposure
         # Passwords and session data should not be logged.
-        app.logger.info('Logged in succesfully with username %s, password %s, session id %s and session username %s', username, password, username, username)
+        app.logger.info('Logged in succesfully with username %s, password %s, session id %s and session username %s', username, password, session["id"], session["username"])
         return render_template("notes.html", notes=notes)
 
 @app.route("/create")
