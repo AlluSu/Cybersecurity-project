@@ -1,9 +1,6 @@
 ## Cybersecurity Base MOOC 2022 course project  
 
-As Heroku has decided to end their free-tier services, the link below does not work. Moving this app possibly to Fly.io soon.  
-
-Link to the application which is running on Heroku:  
-[Unsafe-notebook](https://unsafe-notebook.herokuapp.com/index)  
+At the moment the app is not running anywhere in the public internet, as most of the previously free-tier hosting services have quit being free.  
 
 Flaws on the application are based on the OWASP TOP10 list from 2017, [see here for details](https://owasp.org/www-project-top-ten/2017/Top_10.html).
 
